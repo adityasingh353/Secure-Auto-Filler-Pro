@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="icon300.png" alt="Secure Auto-Filler Pro Logo" width="128" height="128" />
+  <img src="dist\icons\icon300.png" alt="Secure Auto-Filler Pro Logo" width="128" height="128" />
   
   # Secure Auto-Filler Pro
 
