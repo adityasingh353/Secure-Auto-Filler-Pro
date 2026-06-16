@@ -9,6 +9,10 @@
 
 ---
 
+## 🎥 Demo
+
+[![Project Demo](https://img.youtube.com/vi/1-f35bjZnjE/0.jpg)](https://www.youtube.com/watch?v=1-f35bjZnjE)
+
 ## 🌟 Features
 
 * **🛡️ 100% Private & Local:** No external servers, no cloud storage, no telemetry. Everything is stored strictly on your local machine.
