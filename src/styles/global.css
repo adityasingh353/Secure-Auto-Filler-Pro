@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: hsl(230, 85%, 60%);
+  --primary-hover: hsl(230, 85%, 65%);
+  --bg-color: hsl(220, 20%, 97%);
+  --surface-color: hsl(0, 0%, 100%);
+  --text-color: hsl(220, 20%, 20%);
+  --text-muted: hsl(220, 10%, 50%);
+  --border-color: hsl(220, 20%, 90%);
+  --success-color: hsl(150, 70%, 40%);
+  --danger-color: hsl(350, 70%, 50%);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='dark'] {
+  --primary-color: hsl(230, 90%, 65%);
+  --primary-hover: hsl(230, 90%, 75%);
+  --bg-color: hsl(220, 20%, 8%);
+  --surface-color: hsl(220, 20%, 12%);
+  --text-color: hsl(220, 20%, 95%);
+  --text-muted: hsl(220, 10%, 70%);
+  --border-color: hsl(220, 20%, 20%);
+  --success-color: hsl(150, 70%, 45%);
+  --danger-color: hsl(350, 70%, 55%);
+  --glass-bg: rgba(20, 20, 25, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Modern Input */
+.modern-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.modern-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(100, 150, 255, 0.2);
+  outline: none;
+}
+
+/* Modern Button */
+.modern-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: var(--primary-color);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.modern-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(100, 150, 255, 0.3);
+}
+
+.modern-btn:active {
+  transform: translateY(0);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPSC Mock Form</title>
+</head>
+<body style="font-family: sans-serif; padding: 40px; max-width: 600px; margin: 0 auto;">
+    <h2>UPSC Candidate Registration Form</h2>
+    <p style="color: #666; margin-bottom: 24px;">Test the Secure Auto-Filler on this page!</p>
+    
+    <div style="margin-bottom: 16px;">
+        <label for="fname">Candidate Full Name:</label><br>
+        <input type="text" id="fname" style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+    </div>
+
+    <div style="margin-bottom: 16px;">
+        <label>Father's Name:</label><br>
+        <input type="text" name="parent_father" style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+    </div>
+    
+    <div style="margin-bottom: 16px;">
+        <label for="birthdate">Date of Birth:</label><br>
+        <input type="date" id="birthdate" style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+    </div>
+    
+    <div style="margin-bottom: 16px;">
+        <label>Gender:</label><br>
+        <select name="sex" style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Transgender</option>
+        </select>
+    </div>
+
+    <div style="margin-bottom: 16px;">
+        <label>Category (General/OBC/SC/ST):</label><br>
+        <select id="caste_cat" style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+            <option>Select</option>
+            <option value="General">General</option>
+            <option value="OBC">OBC</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+        </select>
+    </div>
+
+    <div style="margin-bottom: 16px;">
+        <label>Upload Passport Size Photograph:</label><br>
+        <input type="file" name="photo_upload" accept="image/*" style="width: 100%; padding: 8px; border: 1px dashed #007bff;">
+    </div>
+
+    <div style="margin-bottom: 16px;">
+        <label>Upload 10th Marksheet/Certificate:</label><br>
+        <input type="file" name="tenth_cert_upload" accept=".pdf,image/*" style="width: 100%; padding: 8px; border: 1px dashed #007bff;">
+    </div>
+
+    <div style="margin-bottom: 24px;">
+        <label>10th Board Percentage:</label><br>
+        <input type="text" name="matric_marks" placeholder="e.g. 95%" style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+    </div>
+    
+    <button style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit Application</button>
+</body>
+</html>
